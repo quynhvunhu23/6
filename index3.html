@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./img3/pexels-photo-531318.jpeg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        c
+      }
+      .khungdn {
+        position: relative;
+        padding: 20px;
+        width: 380px;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        color: white
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid white;
+      }
+      .checkbox-group {
+        display: flex; /* Kích hoạt Flexbox cho nhóm checkbox */
+        align-items: center; /* Căn giữa theo chiều dọc */
+        margin-top: 40px;
+        margin-bottom: 10px; /* Khoảng cách giữa nhóm checkbox và các phần tử khác */
+      }
+      .checkbox-group input{
+
+        margin-right: 7px;
+        margin-bottom: 10px;
+      }
+      .row img {
+        width: 20px;
+        margin-left: 5px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+      }
+      .row input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        font-size: 14px;
+        background-color: transparent;
+      }
+      .row input::placeholder{
+        color: white;
+        opacity: 0.6; /* Chỉnh độ mờ*/
+      }
+      .forgot-password {
+        display: inline-block; /* Hiển thị như một khối nội tuyến */
+        text-align: right; /* Căn phải cho liên kết quên mật khẩu */
+        text-decoration: none; /* Không có gạch chân */
+        margin-left: auto; /* Tự động tạo khoảng cách để căn phải */
+        margin-bottom: 5px;
+        color: white;
+      }
+
+      .forgot-password:hover {
+        text-decoration: underline; /* Gạch chân khi di chuột qua */
+      }
+      .login-button{
+        width: 100%;
+        background-color: #ff4081;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 8px;
+        font-size: 16px;
+      }
+      .login-button:hover{
+        background-color: #b92d5c;
+      }
+      .abc{
+        width:5% ;
+        background-color: #ff4081;
+        color: white;
+        border: none;
+        margin-top: 35px;
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 50%;
+        text-align: center;
+        margin-left: 170.6px;
+      }
+      .lienket {
+        display: flex; /* Kích hoạt Flexbox cho nhóm checkbox */
+        align-items: center; /* Căn giữa theo chiều dọc */
+        margin-top: 40px;
+        margin-bottom: 10px; /* Khoảng cách giữa nhóm checkbox và các phần tử khác */
+      }
+      .fb{
+        width: 150px;
+        height: 30px;
+        display: flex;
+        align-items: center; /*căn giữa các phần tử*/
+        background-color: rgb(64, 67, 230);
+      }
+      .tt{
+        width: 150px;
+        height: 30px;
+        display: flex;
+        align-items: center; /*căn giữa các phần tử*/
+        background-color: rgb(128, 205, 250);
+        text-align: right;
+        margin-left: auto;
+      }
+      .fb img{
+        width: 30px;
+          margin-left: 5px; /*Tạo khoảng trống 5px giữa cạnh trái của phần tử (trong trường hợp này là img) và phần tử liền kề bên trái của nó.*/
+          margin-right: 7px;
+      }
+       .tt img{
+        width: 30px;
+          margin-left: 5px; /*Tạo khoảng trống 5px giữa cạnh trái của phần tử (trong trường hợp này là img) và phần tử liền kề bên trái của nó.*/
+          margin-right: 7px;
+      }
+      .chinh{
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="khungdn">
+      <form action="">
+        <legend
+          style="
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 200%;
+            margin-bottom: 20px;
+          "
+        >
+          Đăng nhập
+        </legend>
+        <div class="row">
+          <img src="./img3/người.png" alt="user" />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="User name"
+            required
+          />
+        </div>
+        <div class="row">
+          <img src="./img3/pw.png" alt="password" />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="remember-me" name="remember-me" />
+          <label for="remember-me">Remember me</label>
+          <a href="./index.html" class="forgot-password">Forgot Password?</a>
+        </div>
+        <button type="submit" class="login-button">Login</button>
+        <p class="abc">Or</p>
+        <div class="lienket">
+          <div class="fb">
+            <img src="./img3/fb.png" alt="fb" />
+            <a
+              class="chinh"
+              href="https://www.facebook.com/profile.php?id=100012062113391"
+              target="blank"
+              >Facebook</a
+            >
+          </div>
+          <div class="tt">
+            <img src="./img3/tt.png" alt="tt" />
+            <a href="#" class="chinh">Twitter</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
