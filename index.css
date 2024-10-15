@@ -1,0 +1,59 @@
+body {
+    background: #241f1f;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .form-container {
+    background-color: #ecc5d7;
+    padding: 20px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /*tạo bóng đổ*/
+    font-family: Arial, sans-serif;
+    align-items: center;
+  }
+
+  .input-row {
+    display: flex;
+    align-items: center; /*căn giữa các phần tử*/
+    margin-bottom: 10px; /*khoảng cách giữa các hàng input*/
+    background-color: white;
+    border-radius: 8px; /* bo góc */
+    padding: 5px; /*khoảng cách các lề trong khung*/
+    border: 1px solid #ff4081;
+  }
+
+  .input-row img {
+    width: 20px;
+    margin-left: 5px; /*Tạo khoảng trống 5px giữa cạnh trái của phần tử (trong trường hợp này là img) và phần tử liền kề bên trái của nó.*/
+    margin-right: 7px;
+  }
+
+  .input-row input[type="text"] {
+    flex: 1; /*  */
+    padding: 10px;
+    border: none;
+    border-radius: 8px; /* Ensures input is rounded with container */
+    font-size: 14px;
+    outline: none; /* Remove default input border on focus */
+  }
+
+  /* Style for the Register button */
+  .form-container button {
+    width: 50%;
+    background-color: #b92d5c; /* Purple background */20px
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; /* Thay đổi hình con trỏ chuột thành hình bàn tay khi chỉ vào nút*/
+    font-size: 16px;
+    margin-top: 10px;
+margin-left: 80px;
+  }
+
+  .form-container button:hover {
+    background-color: #98304f; /* đổi màu của nút khi di chuột qua */
+  }
